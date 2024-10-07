@@ -1,1 +1,1 @@
-Python ile geliştirilen küçük projelerden oluşmaktadır.
+Bu repository Python ile geliştirilen küçük projelerden oluşmaktadır.
