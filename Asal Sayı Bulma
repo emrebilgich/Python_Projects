@@ -1,0 +1,17 @@
+import math
+
+asalmi = int(input("Asalligi kontrol edilecek sayi: "))
+
+while asalmi <= 2:
+   asalmi = int(input("Asalligi kontrol edilecek sayi: "))
+
+asal = True
+for i in range(2, asalmi):
+    if asalmi/i == 0:
+        asal
+        break
+
+if asal:
+    print("Sayi asal.")
+else:
+    print("Sayi asal degil.")
