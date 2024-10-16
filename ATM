@@ -1,0 +1,30 @@
+import time
+
+bakiye = 1000
+
+print("1- Bakiye Goruntule")
+print("2- Para Cek")
+print("3- Para Yatir")
+print("4- Cikis Yap")
+
+yapilacak_islem = input("Yapmak Istediginiz Islemi Giriniz: ")
+
+if yapilacak_islem == "1":
+    print("Guncel Bakiyeniz:", bakiye)
+elif yapilacak_islem == "2":
+    cekilmek_istenen_miktar = int(input("Cekmek istediginiz miktari giriniz: "))
+    if cekilmek_istenen_miktar <= bakiye:
+        bakiye -= cekilmek_istenen_miktar
+        print("Yeni bakiyeniz:", bakiye)
+    else:
+        print("Yetersiz bakiye!")
+elif yapilacak_islem == "3":
+    yatirilmak_istenen_miktar = int(input("Yatirmak istediginiz miktari giriniz: "))
+    bakiye += yatirilmak_istenen_miktar
+    print("Yeni bakiyeniz:", bakiye)
+elif yapilacak_islem == "4":
+    print("Cikis yapiliyor...")
+    time.sleep(3)
+    exit()
+else:
+    print("Gecersiz islem!")
